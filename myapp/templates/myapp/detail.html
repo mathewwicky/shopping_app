@@ -1,0 +1,11 @@
+{% extends 'myapp/base.html' %} 
+{% block content%}
+<div class="flex p-10 w-full h-200">
+    <img class="w-1/4 mt-2" src="{{product.image.url}}" alt="">
+    <div class="w-3/4 text-xl px-10 ml-5 ">
+        <div class="mt-5">{{product.name}}</div>
+        <div class="mt-5 text-green-500">$ {{product.price}}</div>
+        <div class="mt-5">{{product.desc}}</div>
+    </div>
+</div>
+{% endblock %}
