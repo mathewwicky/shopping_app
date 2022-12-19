@@ -1,8 +1,17 @@
 {% extends 'myapp/base.html'%}
 {% block content%}
-<div class="text-2xl font-bold ">
-    <h3 >This is a profile:
-    <p class="text-lg text-red-500">{{user.username}}</p></h3>
+<div class="grid p-10 grid-cols-1 lg:grid-cols-3 sm:grid-cols-1">
+<div class="rounded shadow-lg">
+    <div>
+        <img src="{{user.profile.image.url}}" alt="">
+    </div>
+    <div class="font-bold mb-2 px-6 py-4 text-xl">{{user.username}}</div>
 </div>
+
+</div>
+
+    
+    
+
 
 {% endblock %}
