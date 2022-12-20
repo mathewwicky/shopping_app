@@ -5,7 +5,9 @@
     <div class="w-3/4 text-xl px-10 ml-5 ">
         <div class="mt-5">{{product.name}}</div>
         <div class="mt-5 text-green-500">$ {{product.price}}</div>
-        <div class="mt-5">{{product.desc}}</div>
+        <div class="mt-5 text-gray-700">{{product.desc}}</div>
+        <div class="mt-5 text-gray-700">Posted by: {{product.seller_name}}</div>
+        <div class="mt-5 text-gray-700">Contact: {{product.seller_name.profile.contact_number}}</div>
     </div>
 </div>
 {% endblock %}
